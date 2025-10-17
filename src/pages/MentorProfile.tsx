@@ -160,18 +160,6 @@ const MentorProfile = () => {
           </div>
         </Card>
 
-        {/* 核心价值观 */}
-        <Card className="p-4">
-          <h3 className="text-sm font-semibold text-title mb-2">💡 核心价值观</h3>
-          <p className="text-sm text-body leading-relaxed">{mentor.coreValues}</p>
-        </Card>
-
-        {/* 沟通风格 */}
-        <Card className="p-4">
-          <h3 className="text-sm font-semibold text-title mb-2">💬 沟通风格</h3>
-          <p className="text-sm text-body leading-relaxed">{mentor.style}</p>
-        </Card>
-
         {/* 代表性经历 */}
         <Card className="p-4">
           <h3 className="text-sm font-semibold text-title mb-2">⭐ 代表性经历</h3>
