@@ -184,11 +184,14 @@ const MentorProfile = () => {
       {/* Bottom CTA */}
       <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border p-4">
         <Button
-          className="w-full bg-accent hover:bg-accent/90 h-12 text-base"
+          className="w-full bg-accent hover:bg-accent/90 h-12 text-base font-medium"
           onClick={() => setShowPayment(true)}
         >
-          与TA的数字分身对话 (¥9.9)
+          和TA链接 (¥9.9)
         </Button>
+        <p className="text-xs text-caption text-center mt-2">
+          专属报告 + 无限答疑
+        </p>
       </div>
 
       {/* Payment Modal */}
