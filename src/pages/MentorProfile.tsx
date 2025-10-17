@@ -195,49 +195,106 @@ const MentorProfile = () => {
       {/* Payment Modal */}
       {showPayment && (
         <div className="fixed inset-0 bg-black/50 flex items-end z-50 animate-fade-in">
-          <div className="bg-card w-full rounded-t-2xl p-6 animate-slide-in-bottom">
-            <h3 className="text-xl font-bold text-title mb-4 text-center">
+          <div className="bg-card w-full rounded-t-2xl p-6 animate-slide-in-bottom max-h-[85vh] overflow-y-auto">
+            <h3 className="text-xl font-bold text-title mb-2 text-center">
               解锁对话权限
             </h3>
+            
+            <p className="text-sm text-caption text-center mb-4">
+              真人咨询价 ¥799/小时
+            </p>
 
-            <div className="bg-primary/5 rounded-lg p-4 mb-6">
-              <p className="text-2xl font-bold text-primary text-center mb-2">¥9.9</p>
-              <p className="text-sm text-caption text-center">
-                原价 ¥1000+ 真人咨询
-              </p>
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-4 mb-6 border border-primary/20">
+              <p className="text-xs text-caption text-center mb-2">限时特惠</p>
+              <p className="text-3xl font-bold text-primary text-center">¥9.9</p>
             </div>
 
-            <div className="space-y-3 mb-6">
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded-full bg-success flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-xs">✓</span>
+            <div className="grid grid-cols-2 gap-4 mb-6 bg-background rounded-lg p-4">
+              {/* 1v1答疑 */}
+              <div>
+                <h4 className="text-sm font-semibold text-title mb-3 text-center">1v1答疑</h4>
+                <div className="space-y-2.5">
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">与宗拓无限对话</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">24小时在线</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">深度行业认知</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">专属对话记忆</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">深度追踪你的成长</p>
+                  </div>
                 </div>
-                <p className="text-sm text-body">无限次数对话</p>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded-full bg-success flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-xs">✓</span>
+
+              {/* 专属报告 */}
+              <div>
+                <h4 className="text-sm font-semibold text-title mb-3 text-center">专属报告</h4>
+                <div className="space-y-2.5">
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">个人背景深度梳理</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">求职岗位揭秘</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">技能提升路径</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">如何拿到心仪工作</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-4 h-4 rounded-full bg-success flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-[10px]">✓</span>
+                    </div>
+                    <p className="text-xs text-body leading-relaxed">真实成功案例</p>
+                  </div>
                 </div>
-                <p className="text-sm text-body">24小时随时提问</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded-full bg-success flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <p className="text-sm text-body">个性化职业建议</p>
               </div>
             </div>
 
             <div className="flex gap-3">
               <Button
                 variant="outline"
-                className="flex-1"
+                className="flex-1 h-12"
                 onClick={() => setShowPayment(false)}
               >
                 取消
               </Button>
               <Button
-                className="flex-1 bg-accent hover:bg-accent/90"
+                className="flex-1 bg-accent hover:bg-accent/90 text-white h-12 font-medium"
                 onClick={() => {
                   setShowPayment(false);
                   navigate(`/chat/${id}`);
