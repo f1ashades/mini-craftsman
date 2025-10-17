@@ -172,6 +172,13 @@ const MentorProfile = () => {
             💡 此数字分身基于真实行业精英的深度访谈创建
           </p>
         </div>
+
+        {/* 导师寄语 */}
+        <Card className="p-4 bg-card/50">
+          <p className="text-sm text-body leading-relaxed">
+            你好，我是{mentor.name}。为了能将我的经验帮助到更多同学，我通过口袋导师复刻了我的认知体系，创造了独家「数字分身」。TA将7x24小时为你服务，分享我最真实的思考。
+          </p>
+        </Card>
       </div>
 
       {/* Bottom CTA */}
