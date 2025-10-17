@@ -166,15 +166,13 @@ const MentorProfile = () => {
           <p className="text-sm text-body leading-relaxed">{mentor.story}</p>
         </Card>
 
-        {/* 提示信息 */}
-        <div className="mt-2 p-4 bg-secondary/50 rounded-lg">
-          <p className="text-xs text-caption text-center">
-            💡 此数字分身基于真实行业精英的深度访谈创建
-          </p>
-        </div>
-
         {/* 导师寄语 */}
-        <Card className="p-4 bg-card/50">
+        <Card className="p-4 bg-card">
+          <div className="mb-3 pb-3 border-b border-border">
+            <p className="text-xs text-caption text-center">
+              💡 此数字分身基于真实行业精英的深度访谈创建
+            </p>
+          </div>
           <p className="text-sm text-body leading-relaxed">
             你好，我是{mentor.name}。为了能将我的经验帮助到更多同学，我通过口袋导师复刻了我的认知体系，创造了独家「数字分身」。TA将7x24小时为你服务，分享我最真实的思考。
           </p>
@@ -182,9 +180,9 @@ const MentorProfile = () => {
       </div>
 
       {/* Bottom CTA */}
-      <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border p-4">
+      <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border p-4 shadow-lg">
         <Button
-          className="w-full bg-accent hover:bg-accent/90 h-12 text-base font-medium"
+          className="w-full bg-accent hover:bg-accent/90 text-white h-12 text-base font-medium rounded-xl shadow-sm"
           onClick={() => setShowPayment(true)}
         >
           和TA链接 (¥9.9)
