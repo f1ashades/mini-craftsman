@@ -137,7 +137,7 @@ const MentorProfile = () => {
           <div className="flex items-start gap-3">
             <Briefcase className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
             <div className="flex-1">
-              <p className="text-xs text-caption mb-1">工作经历</p>
+              <p className="text-xs text-caption mb-1">工作</p>
               <p className="text-sm text-title font-medium">{mentor.position}</p>
               <p className="text-xs text-caption mt-1">毕业{mentor.graduatedYears}</p>
             </div>
