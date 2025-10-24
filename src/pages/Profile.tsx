@@ -54,29 +54,6 @@ const Profile = () => {
             </div>
             <ChevronRight className="w-5 h-5 text-caption" />
           </div>
-
-          {unlockedMentors.length > 0 && (
-            <div className="mt-4 space-y-3">
-              {unlockedMentors.map((mentor) => (
-                <div
-                  key={mentor.id}
-                  className="flex items-center gap-3 p-3 bg-background rounded-lg cursor-pointer hover:bg-secondary/50 transition-colors"
-                  onClick={() => navigate(`/chat/${mentor.id}`)}
-                >
-                  <img
-                    src={mentor.avatar}
-                    alt={mentor.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-body">{mentor.name}</p>
-                    <p className="text-xs text-caption">{mentor.title}</p>
-                  </div>
-                  <ChevronRight className="w-4 h-4 text-caption" />
-                </div>
-              ))}
-            </div>
-          )}
         </Card>
 
         {/* Redeem Code */}
