@@ -39,7 +39,7 @@ const Profile = () => {
       </header>
 
       <div className="p-4 space-y-4">
-        {/* My Mentors */}
+        {/* My Info */}
         <Card className="p-4">
           <div
             className="flex items-center justify-between cursor-pointer"
@@ -48,8 +48,8 @@ const Profile = () => {
             <div className="flex items-center gap-3">
               <MessageSquare className="w-5 h-5 text-primary" />
               <div>
-                <h3 className="text-base font-medium text-title">我的导师</h3>
-                <p className="text-xs text-caption">已解锁 {unlockedMentors.length} 位导师</p>
+                <h3 className="text-base font-medium text-title">我的信息</h3>
+                <p className="text-xs text-caption">完善个人信息</p>
               </div>
             </div>
             <ChevronRight className="w-5 h-5 text-caption" />
@@ -79,14 +79,14 @@ const Profile = () => {
           )}
         </Card>
 
-        {/* My Reports */}
+        {/* Redeem Code */}
         <Card className="p-4">
           <div className="flex items-center justify-between cursor-pointer">
             <div className="flex items-center gap-3">
               <FileText className="w-5 h-5 text-accent" />
               <div>
-                <h3 className="text-base font-medium text-title">我的报告</h3>
-                <p className="text-xs text-caption">查看生成的职业分析报告</p>
+                <h3 className="text-base font-medium text-title">兑换码</h3>
+                <p className="text-xs text-caption">解锁更多导师</p>
               </div>
             </div>
             <ChevronRight className="w-5 h-5 text-caption" />
@@ -96,7 +96,7 @@ const Profile = () => {
         {/* Info Card */}
         <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-4 border border-primary/20">
           <p className="text-xs text-caption text-center">
-            💡 升级VIP会员，解锁更多导师和高级功能
+            💡 一次链接，看见新的未来
           </p>
         </div>
       </div>
