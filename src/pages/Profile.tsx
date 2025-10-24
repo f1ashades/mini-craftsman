@@ -38,20 +38,6 @@ const Profile = () => {
         </div>
       </header>
 
-      {/* Stats Section */}
-      <div className="mx-4 mt-4 bg-card rounded-lg border border-border p-4">
-        <div className="grid grid-cols-2 divide-x divide-border">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-title">1</div>
-            <div className="text-sm text-caption mt-1">解锁导师</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-title">15d</div>
-            <div className="text-sm text-caption mt-1">学习天数</div>
-          </div>
-        </div>
-      </div>
-
       <div className="p-4 space-y-4">
         {/* My Info */}
         <Card className="p-4">
