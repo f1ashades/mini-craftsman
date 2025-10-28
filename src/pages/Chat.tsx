@@ -39,6 +39,7 @@ const Chat = () => {
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+  const [remainingChats, setRemainingChats] = useState(20);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -73,6 +74,7 @@ const Chat = () => {
       };
       setMessages((prev) => [...prev, aiMessage]);
       setIsTyping(false);
+      setRemainingChats((prev) => Math.max(0, prev - 1));
     }, 1500);
   };
 
@@ -176,6 +178,11 @@ const Chat = () => {
 
       {/* Input */}
       <div className="bg-card border-t border-border p-4">
+        <div className="mb-3 text-center">
+          <span className="text-sm text-caption">
+            今日还剩 <span className="font-semibold text-primary">{remainingChats}</span> 次对话
+          </span>
+        </div>
         <div className="flex gap-2">
           <Input
             placeholder="输入你的问题..."
